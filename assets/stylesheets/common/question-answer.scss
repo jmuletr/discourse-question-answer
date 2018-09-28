@@ -1,91 +1,84 @@
 .qa-tip-container {
-  position: relative;
+    position: relative;
 }
 
 .qa-tip {
-  position: relative;
-
-  .btn {
-    float: left;
-  }
-
-  .fa {
-    margin-right: 2px;
-  }
+    position: relative;
+    .btn {
+        float: left;
+    }
+    .fa {
+        margin-right: 2px;
+    }
 }
 
 .qa-post {
-  float: left;
-
-  .btn {
-    background: white;
-
-    &:hover {
-      background: dark-light-diff($primary, $secondary, 65%, -75%);
-      color: $secondary;
+    float: left;
+    .btn {
+        background: white;
+        &:hover {
+            background: dark-light-diff($primary, $secondary, 65%, -75%);
+            color: $secondary;
+        }
     }
-  }
-
-  .count {
-    text-align: center;
-  }
+    .count {
+        text-align: center;
+        background-color: lightgray;
+        font-size: 1.5em;
+    }
 }
 
-.time-gap+.topic-post.answer .topic-body, .time-gap+.topic-post.comment .topic-body {
-  border-top: 1px solid $primary-low;
+.time-gap+.topic-post.answer .topic-body,
+.time-gap+.topic-post.comment .topic-body {
+    border-top: 1px solid $primary-low;
 }
 
-.topic-post.answer+.time-gap, .topic-post.comment+.time-gap {
-  display: none;
+.topic-post.answer+.time-gap,
+.topic-post.comment+.time-gap {
+    display: none;
 }
 
 nav.post-controls button.comment {
-  font-size: 1em;
+    font-size: 2em;
 }
 
 .topic-post.comment {
-  display: none;
-
-  &.show {
-    display: block;
-  }
-
-  .avatar-flair {
-    width: 12px;
-    height: 12px;
-    right: 16px;
-
-    i {
-      font-size: 8px;
+    display: none;
+    &.show {
+        display: block;
     }
-  }
+    .avatar-flair {
+        width: 12px;
+        height: 12px;
+        right: 16px;
+        i {
+            font-size: 8px;
+        }
+    }
 }
 
 .show-comments {
-  margin-bottom: 10px;
-  display: inline-block;
+    margin-bottom: 10px;
+    display: inline-block;
 }
 
 .answer .show-comments {
-  padding-left: 105px;
+    padding-left: 105px;
 }
 
 // identical to classes in other plugins
-
 .tip-details {
-  background-color: dark-light-diff($primary, $secondary, 95%, -85%);
-  box-shadow: shadow('dropdown');
-  padding: 10px 15px;
-  position: absolute;
-  top: 22px;
-  z-index: 9999;
-  width: 300px;
-
-  ul {
-    margin-bottom: 0;
-  }
-
-  li {
-    margin: 2px 0;
-  }
+    background-color: dark-light-diff($primary, $secondary, 95%, -85%);
+    box-shadow: shadow('dropdown');
+    padding: 10px 15px;
+    position: absolute;
+    top: 22px;
+    z-index: 9999;
+    width: 300px;
+    ul {
+        margin-bottom: 0;
+    }
+    li {
+        margin: 2px 0;
+    }
 }
